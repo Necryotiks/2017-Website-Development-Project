@@ -1,24 +1,14 @@
 import _io
+from Records import Record
 import threading
+import importlib
+import csv
 
-class Record:
-	def __init__(self):#Initialize the object
-		self._x = _x
-	def add_Name(self,name): #First,Last name
-		self.name = name
-	def add_Phone(self,phone_num):#phone number
-		self.phone_num = phone_num
-	def add_Email(self,email):#email address
-		self.email = email
-	def add_Address(self,address):#physical address
-		self.address = address
-	def add_Carrier(self,carrier):#phone carrier
-		self.carrier = carrier
-	def add_Textblock(self,text):#text for record
-		self.text = text
+test_record = Record() #initalize Record object
+test_record.name = "Elliott"  #set name
 
-try:
-	open("Record_List",'a')
-except IOError:
-	open("Record_List",'x')
+with open("Record_List.csv",'a+') as FileOBJ:
+        CSVWriter = csv.writer(FileOBJ,delimiter = ',') # currently seperates each letter(FIXED)
+        CSVWriter.writerow([test_record.name]);
+
 
