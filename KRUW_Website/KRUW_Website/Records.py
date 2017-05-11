@@ -26,11 +26,11 @@ def add_Email(self,email):#email address
 		self.email = email
 def add_Street_Address(self,address):#physical street address
 		self.address = address
-def add_City(self,city_name):
+def add_City(self,city_name):#city field
     self.city = city_name
-def add_State(self,state):
+def add_State(self,state):#state field
     self.state = state
-def add_ZIP(self,zip_num):
+def add_ZIP(self,zip_num): #ZIP field
     self.zip = zip_num
 def add_Carrier(self,carrier):#phone carrier
 		self.carrier = carrier
