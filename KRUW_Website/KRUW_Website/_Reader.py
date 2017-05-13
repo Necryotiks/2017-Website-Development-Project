@@ -6,8 +6,17 @@ def recordReader(recordArray):
         for row in CSVReader:
             x = Record()
             #
-            #add shit to record here
+            #add shit to each record instance here
             #
+            x.add_Name(row[0])
+            x.add_Phone(row[1])
+            x.add_Email(row[2])
+            x.add_Street_Address(row[3])
+            x.add_City(row[4])
+            x.add_State(row[5])
+            x.add_ZIP(row[6])
+            x.add_Carrier(row[7])
+            x.add_Textblock(row[8])
             recordArray.append(x)
         FileOBJ.close()
     return

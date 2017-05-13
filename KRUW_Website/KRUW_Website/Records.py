@@ -8,7 +8,7 @@ class Record:
     zip = None
     carrier = None
     text = None
-    def __init__(self):#Initialize the object; functions like a constructor 
+    def __init__(self):#Initialize the object; functions like a constructor
         self.name = ""
         self.phone_num = ""
         self.email = ""
