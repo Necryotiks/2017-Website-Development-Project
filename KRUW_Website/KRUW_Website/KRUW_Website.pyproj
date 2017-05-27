@@ -32,9 +32,6 @@
     <Compile Include="_Writer.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Records.py">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="KRUW_Website.py" />
     <Compile Include="_Reader.py">
       <SubType>Code</SubType>
