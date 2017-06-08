@@ -51,14 +51,16 @@
     <Folder Include="Record_Keeper\" />
     <Folder Include="Record_Keeper\migrations\" />
     <Folder Include="Record_Keeper\templates\" />
+    <Folder Include="Record_Keeper\templates\Record_Keeper\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Record_Keeper\templates\about.html" />
-    <Content Include="Record_Keeper\templates\contact.html" />
-    <Content Include="Record_Keeper\templates\index.html" />
-    <Content Include="Record_Keeper\templates\layout.html" />
-    <Content Include="Record_Keeper\templates\login.html" />
-    <Content Include="Record_Keeper\templates\loginpartial.html" />
+    <Content Include="Record_Keeper\templates\Record_Keeper\about.html" />
+    <Content Include="Record_Keeper\templates\Record_Keeper\contact.html" />
+    <Content Include="Record_Keeper\templates\Record_Keeper\index.html" />
+    <Content Include="Record_Keeper\templates\Record_Keeper\layout.html" />
+    <Content Include="Record_Keeper\templates\Record_Keeper\login.html" />
+    <Content Include="Record_Keeper\templates\Record_Keeper\loginpartial.html" />
+    <Content Include="Record_Keeper\templates\Record_Keeper\MISC.html" />
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />
   </ItemGroup>

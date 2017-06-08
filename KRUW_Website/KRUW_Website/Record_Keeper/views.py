@@ -3,9 +3,11 @@ Definition of views.
 """
 
 from django.shortcuts import render
+from django.http.response import HttpResponse
 from django.http import HttpRequest
 from django.template import RequestContext
 from datetime import datetime
+from .models import Record
 
 def home(request):
     """Renders the home page."""
@@ -44,3 +46,7 @@ def about(request):
             'year':datetime.now().year,
         }
     )
+def index(request):
+    all_records = Record.objects.all()
+    html=''
+    return HttpResponse(html)
